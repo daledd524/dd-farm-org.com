@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DD Farm</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header section start -->
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" width="180px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">หน้าเเรก</a></li>
+                        <li><a href="products.html">สินค้าทั้งหมด</a></li>
+                        <li><a href="https://line.me/ti/p/EwKJek2Iuy">Line</a></li>
+                        <li><a href="https://www.facebook.com/organicDDfarm">Facebook</a></li>
+                        <li><a href="gallery/index.html">รูปจริงจากฟาร์ม</a></li>
+                        <li><a href="media_player/index.html">ดูวีดีโอจากฟาร์มจริง</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/cart.jpg" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------ single products details -----------------  -->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/gallery-2.jpg" width="100%" id="ProductImg">
+
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/gallery-2.jpg" width="100%" class="small-img"> 
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery-2.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery-2.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery-2.jpg" width="100%" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <h1>ไข่ไก่แผงไซส์ L (เบอร์ 2)</h1>
+                <h4>180 บาท</h4>
+                <input type="number" value="1">
+                <li><a href="https://www.facebook.com/messages/t/101103472527087" class="btn">ซื้อเลย</a></li>                
+                <p>น้ำหนัก 56-60 กรัม จำนวน 30 ฟอง/แผง แอดไลน์ที่ปุ่มเพิ่มเพื่อนที่ด้านล่างเว็บไซส์ หากแอดลายเเละเเจ้งว่าสั่งซื้อจากเว็บไซส์โดยใส่โค้ด ddไข่เอ้กอินทรีย์อารมดี จะได้รับโค้าดส่งฟรี 
+!!!สำหรับลูกค้า 10คนเเรกเท่านั้นนะครับ!!! (กดสั่งซื้อเพื่อสั่งสินค้าโดยหลังจากกดสั่งจะเด้งไปที่ message facebook สามารถเเจ้งได้ว่าจะรับสินค้าจำนวนเท่าไหร่และสามารถชำระเงินได้ตามช่องทางที่เเจ้งไว้ด้านล่าง สามารถแอดไลน์ได้ที่ด้านล่างเเละทางเราจะเเจ้งหมายเลขพัสดุทาง gmail, message facebook หรือ line ครับ ลูกค้าสามารถเเจ้งได้ครับ ว่าสะดวกรับข้อมูลการขนส่งผ่านช่องทางไหน ขอบคุณมากครับ)</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ------------------ footer ----------------  -->
+  <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>ติดต่อเรา</h3>
+                    <p>สามารถติอต่อสอบถามก่อนสั่งซื้อได้ที่ตัวเลือกด้านล่างนะครับ</p>
+                    <div class="app-logo">
+                        <a href="https://lin.ee/hM2kS8z"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/th.png" alt="เพิ่มเพื่อน" height="36" border="0"></a>
+                        <a href="https://www.facebook.com/messages/t/101103472527087"><img src="images/facebook_logo.jpg" height="36" border="0"></a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png">
+                </div>
+                <div class="footer-col-4">
+                    <a href="index.html"><img src="images/facebook_logo.jpg"></a>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright"> Copytight 2022 - ไข่ไก่อินทรีย์ dd ฟาร์ม</p>
+        </div>
+    </div>
+
+    <!-- ------------ js for toggle menu -----------  -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>
